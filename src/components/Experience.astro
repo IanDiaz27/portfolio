@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Oct 2022 - Actualmente...",
+    title: "Desarrollador Frontend",
+    company: "Airata Argentina",
+    description:
+      "Responsable de la creacion y mantenimiento de aplicaciones web basadas en ReactJS, consumiendo APIs. Trabajamos con la identidad digital de diferentes provincias, billeteras virtuales y verificaciones biometricas.",
+  },
+  {
+    date: "Sept 2022 - Sept 2023",
+    title: "Desarrollador Frontend",
+    company: "Creativedog Agency",
+    description:
+      "En mi rol, fui el encargado de crear experiencias web y móviles sorprendentes y altamente eficientes. Utilizando Next.js, creé interfaces de usuario dinámicas y altamente optimizadas que ofrecen una navegación fluida y atractiva para los usuarios. Trabajé de manera ágil, adoptando Scrum como metodología para gestionar proyectos de forma colaborativa y transparente.",
+  },
+  {
+    date: "Dic 2021 - Sept 2022",
+    title: "Full stack Developer",
+    company: "Vippinn",
+    description:
+      "Como Desarrollador, me especialicé en ReactJS para crear experiencias web y móviles excepcionales, utilizando Scrum como metodología ágil para impulsar proyectos eficientes y colaborativos. Colaboré de cerca con un equipo multidisciplinario, transformando ideas creativas en soluciones tecnológicas innovadoras.",
+  },
+  
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
